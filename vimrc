@@ -26,3 +26,4 @@ augroup filetype_python
     au BufWritePost,cursorhold * filetype detect
     "au FileType python colo molokai
 augroup END
+syntax on
