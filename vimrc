@@ -10,3 +10,6 @@ noremap <C-l> <C-w>l
 noremap <C-j> <C-w>j
 noremap <C-k> <C-w>k
 syntax on
+set statusline=%F\ %l\:%c
+autocmd FileType make setlocal noexpandtab
+
