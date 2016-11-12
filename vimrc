@@ -29,4 +29,3 @@ augroup END
 syntax on
 set statusline=%F\ %l\:%c
 autocmd FileType make setlocal noexpandtab
-
