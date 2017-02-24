@@ -1,3 +1,28 @@
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+
+" The following are examples of different formats supported.
+" Keep Plugin commands between vundle#begin/end.
+" plugin on GitHub repo
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'Scrooloose/nerdtree'
+" Install L9 and avoid a Naming conflict if you've already installed a
+" different version somewhere else.
+Plugin 'ascenator/L9', {'name': 'newL9'}
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on
+
 set expandtab
 set tabstop=4
 set shiftwidth=4
@@ -29,3 +54,5 @@ augroup END
 syntax on
 set statusline=%F\ %l\:%c
 autocmd FileType make setlocal noexpandtab
+autocmd vimenter * NERDTree
+set guifont=consolas:h14
